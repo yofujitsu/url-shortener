@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: url-shortener
+  datasource:
+    url: jdbc:h2:mem:shortlink;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+    jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+    h2:
+      console:
+        enabled: true
+        path: /h2-console
+
+app:
+  base-url: http://localhost:8080/
+  ttl: 5
+  cleanup-interval-ms: 60000
