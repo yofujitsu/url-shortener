@@ -21,8 +21,9 @@
 
 **Критическая конфигурация:**
 ```properties
-app.base-url=http://localhost:8080/
+app.base-url=http://localhost:8080/ # Базовый URL для короткой ссылки
 app.ttl=24  # Время жизни ссылки по умолчанию в часах (24 часа)
+app.cleanup-interval-ms=60000 # Время обновления планировщика
 ```
 
 ## ⚙Запуск через Maven
